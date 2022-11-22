@@ -55,6 +55,7 @@ header.on .innerHeader{height: 70px;transition: all 0.4s;}
 header.on .innerHeader .logo {transition: all 0.4s;padding: 0 50px;}
 header.on .innerHeader .logo a img {width: 50%;transition: all 0.4s}
 header.on .innerHeader .tnb li {height: 60px;line-height: 60px;transition: all 0.4s;margin-top: 15px;font-size: 15px;}
+
 /*section.visual*/
 section.visual {margin-top: 110px; padding-bottom: 50px; position: relative;background: #f7f6f4;overflow: hidden;z-index: 2;}
 section.visual .img {width: 70%; text-align: center; position: relative; }
@@ -269,6 +270,7 @@ footer p {text-align: center; padding-top: 50px;color: #fff;font-size: 12px;font
 }
 
 @media screen and (max-width:1400px) {
+    .wrap {min-width: 100%;}
     .visual .txtBox {width: 350px;height: 250px;margin: auto;position: absolute; left:62%;top: 40%;line-height: 1.3;display: inline-block;word-spacing:1.5px;z-index: 100; box-sizing:border-box;color: #848484;}
     section.about .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 5%;top: 50px; }
     /* about_leftBox */
@@ -279,11 +281,11 @@ footer p {text-align: center; padding-top: 50px;color: #fff;font-size: 12px;font
 
     /* about_rightBox */
     section.about .inner .rightBox {padding-right: 60px;}
-    section.about .bar1 {position: absolute; right: 27.5%; bottom:29.5%; z-index: -1; width:170px;}
-    section.about .bar2 {position: absolute; right: 27.5%; bottom:21.7%; z-index: -1; width:170px;}
-    section.about .bar3 {position: absolute; right: 29%; bottom:14.5%; z-index: -1; width:150px;}
-    section.about .bar4 {position: absolute; right: 30.5%; bottom:7%; z-index: -1; width:130px;}
-    section.about .bar5 {position: absolute; right: 33.5%; bottom:-5px; z-index: -1; width:90px;}
+    section.about .bar1 {position: absolute; right: 28.5%; bottom:29.5%; z-index: -1; width:170px;}
+    section.about .bar2 {position: absolute; right: 28.5%; bottom:21.7%; z-index: -1; width:170px;}
+    section.about .bar3 {position: absolute; right: 30%; bottom:14.5%; z-index: -1; width:150px;}
+    section.about .bar4 {position: absolute; right: 31.3%; bottom:7%; z-index: -1; width:130px;}
+    section.about .bar5 {position: absolute; right: 34.2%; bottom:-5px; z-index: -1; width:90px;}
     section.Gallery .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 4%;top: 4%; }
     /* leaf */
     #leaf_a {position: absolute; left:-5px;bottom: 20%;}
@@ -298,5 +300,52 @@ footer p {text-align: center; padding-top: 50px;color: #fff;font-size: 12px;font
     /* mainTitle */
     section.Gallery .inner .mainTit, section.about .inner .mainTit {padding-left: 60px;}
 
+    /* contact */
+    section.contact .inner .txt {text-align: center;font-size: 27px;line-height: 2;color: #fff;position: absolute; top: 30%;right: 35%}
+
 }
 
+ /* 1024 테블릿 */
+    /* 1400px~1001px */
+    @media screen and (max-width:1400px){
+        .wrap {min-width: 100%;}
+
+        /* header */
+        .innerHeader .logo {position: absolute;left: 20px;top: 0;}  
+        header.on .innerHeader .logo {transition: all 0.4s;padding: 13px 25px;box-sizing: border-box;}
+        header.on .innerHeader .logo a img {width: 60%;transition: all 0.4s}
+        .menuOpen button.open {position: fixed;right: 2%;top:5.5%;z-index:300; }
+        .menuOpen .menuWrap .close {position: absolute;top:40px;right: 30px;}
+        .menuOpen .menuWrap .menu {width: 25%;height: 100vh;float: left;position: relative;z-index: -9999;}
+        .innerHeader .tnb {display: none;}
+        .menuOpen .menuWrap .menu a {left:19%}
+        .menuOpen .menuWrap .menu:nth-child(2) a{left: 20%;}
+        .menuOpen .menuWrap .menu:nth-child(3) a{left: 22%;}
+        .menuOpen .menuWrap .menu:nth-child(5) a{left: 15%;}
+
+        /*section.visual*/
+        section.visual {margin-top: 100px;}
+        section.visual .txtBox {position: absolute;right: 21%; top: 26%;}
+        section.visual .txtBox .tit {font-size: 36px;font-weight: bold;}
+        section.visual .txtBox .txt {font-size: 13px;}
+        section.visual .shapeBox{width: 40%;height: 40%;position: absolute;top: 19%; left: 60%;}
+        section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 340px;height: 307px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
+        section.visual .shapeBox  #Box2 {position: absolute; left: 0;top: 0;width: 340px;height: 307px;background: #fff;}
+        section.visual .scroll-downs {position: absolute;right: -71px;bottom: -5px;}
+        section.visual .mousey {width: 3px;padding: 2px 9px;height: 28px;}
+        section.visual .mousey .scroller {position: absolute;left: 30%;top: 15%;}
+
+        /* about */
+        section.about .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 32%;top: 44px; }
+        section.about .lineBox {position: absolute;left: 0;top: 45%;z-index: 1;width: 460px;height: 600px;}
+        /* leftBox */
+        section.about .inner .leftBox .imgBox {padding-left: 39px;}
+        section.about .inner .leftBox .imgBox .img {width: 88%;opacity: 0.5;}
+        section.about .inner .leftBox .txtBox {padding: 24px 66px;}
+        /* rightBox */
+        section.about .inner .rightBox {padding-right:169px;}
+        section.about .inner .rightBox .Tit:before {content: '';width: 1px;height: 133px;position: absolute;left: -84px;top: -58px;}
+        section.about .inner .rightBox .txt {font-size: 15px;line-height: 1.5;color: #292929;}
+
+        section.about .inner .rightBox .Tit_2:before { content: ''; width: 1px; height: 133px; position: absolute; left: -84px; top: 9%; background: #e9e0d8; transform: rotate(90deg);}
+    }
