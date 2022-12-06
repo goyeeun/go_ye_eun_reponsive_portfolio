@@ -3,6 +3,7 @@ $(document).on('click', 'a[href="#"]', function(e){
     e.preventDefault();
 });
 
+
 //fixHeader
 var scrollFix = 0;
 scrollFix = $(document).scrollTop();
@@ -39,8 +40,30 @@ function fixHeader(){
     }
 }
 
+// responsive-Gallery-slide
+$(function(){
+    var slider = $('.Gallery .inner .slide');     
+    var timer;    
+    
+     $(window).on('load resize',function(){         
+        clearTimeout( timer );          
+        timer = setTimeout( sliderResponsive(), 100 ); 
+    })       
+    function sliderResponsive(){         
+        if($(window).width() < 767){             
+            slider.filter('.slick-initialized').slick('unslick');         
+        }else{             
+            slider.not('.slick-initialized').slick({                
+                arrows: true,                
+                slidesToShow: 1,                 
+                slidesToScroll: 1            
+            });                         
+        }       
+    }
+    
+});
 
-//slide
+//Gallery-slide
 $(function(){
     $('.Gallery .inner .slide').slick({
         arrows: false, //화살표
@@ -53,7 +76,24 @@ $(function(){
         slidesToScroll: 3,
         infinite: true,
         scroll: true,
-        draggable:true
+        draggable:true,
+        responsive: [ // 반응형 웹 구현 옵션
+    {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow:3,
+        }
+    }
+    ]
+    [ // 반응형 웹 구현 옵션
+    {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow:3,
+        }
+    }
+    ]
+       
     });
 });
 

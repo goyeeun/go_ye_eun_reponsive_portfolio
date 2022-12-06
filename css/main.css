@@ -110,14 +110,14 @@ section.visual .mousey .scroller{width: 5px;height: 8px;border-radius: 50%;backg
 
 /*section.about*/
 section.about {width: 100%;overflow: hidden;position: relative;margin: 0 auto;}
-section.about .inner {width: 1400px;margin: 0 auto;margin-top: 250px; position: relative;overflow: hidden;}
+section.about .inner {width: 1400px;height: 100%;;margin: 0 auto;margin-top: 250px; position: relative;overflow: hidden;}
 section.about .inner .mainTit {width: 100%;height: 100px;line-height: 100px;font-size: 40px;margin-bottom: 60px;}
 section.about .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 0;top: 50px; }
 
 /*lineBox svg*/
 .lineBox {display: block;}
 .lineBox .svgAni path {fill:none; stroke: #000; stroke-width:1; stroke-dasharray:5618;stroke-dashoffset:0;stroke-miterlimit:10;}   
-section.about .lineBox {position: absolute; left: 240px; top: 49%;z-index:1; width: 500px;height: 600px;}
+section.about .lineBox {position: absolute; left: 240px; top: 45%;z-index:1; width: 500px;height: 600px;}
 /*svg애니메이션*/
 .lineBox.motion .svgAni path {animation-name: dash; animation-duration: 1.5s;}
 @keyframes dash {
@@ -172,15 +172,19 @@ section.about .inner .leftBox {float: left;position: relative;margin-top: 200px;
 section.about .inner .leftBox .imgBox {z-index: -2;}
 section.about .inner .leftBox .imgBox .img {width: 90%;}
 section.about .inner .leftBox .imgBox .img img {width: 100%;}
-section.about .inner .leftBox .txtBox {font-size: 15px;font-weight: normal; padding-top: 75px;padding-left: 55px;}
+section.about .inner .leftBox .txtBox {font-size: 15px;font-weight: normal; padding-top: 20px;padding-left: 55px;}
 /*rightBox*/
 section.about .inner .rightBox {float: right;margin-top: 60px;position: relative;}
-section.about .inner .rightBox .Tit {font-size: 20px;font-weight: 600;margin-bottom: 20px;color: #292929;font-weight: normal;font-family: 'Nanum Gothic', sans-serif;}
-section.about .inner .rightBox .Tit:before{content: '';width: 1px;height: 170px;position: absolute;left: -100px;top:-75px; background: #e9e0d8;transform: rotate(90deg);}
-section.about .inner .rightBox .txt {font-size: 14px;line-height: 1.5;color: #292929;}
-section.about .inner .rightBox .Tit_2 {font-size: 20px;font-weight: 600;margin-bottom: 20px;color: #292929;font-weight: normal;font-family: 'Nanum Gothic', sans-serif;padding-top: 20px;}
-section.about .inner .rightBox .Tit_2:before{content: '';width: 1px;height: 170px;position: absolute;left: -100px;top:7%; background: #e9e0d8;transform: rotate(90deg);}
-section.about .inner .rightBox .txt_2 {font-size: 14px;line-height: 1.5;color: #292929;}
+section.about .inner .rightBox .edu {width: 100%;height: 100%;}
+section.about .inner .rightBox .edu .Tit {font-size: 20px;font-weight: 600;color: #292929;font-weight: normal;font-family: 'Nanum Gothic', sans-serif;margin-bottom: 20px;}
+section.about .inner .rightBox .edu .Tit:before{content: '';width: 1px;height: 170px;position: absolute;left: -100px;top:-75px; background: #e9e0d8;transform: rotate(90deg);}
+section.about .inner .rightBox .edu .txt {font-size: 14px;line-height: 1.7;color: #292929;}
+section.about .inner .rightBox .edu .txt span {display: block;}
+section.about .inner .rightBox .career {width: 100%;height: 100%;}
+section.about .inner .rightBox .career .Tit_2 {font-size: 20px;font-weight: 600;margin-bottom: 20px;color: #292929;font-weight: normal;font-family: 'Nanum Gothic', sans-serif;padding-top: 20px;}
+section.about .inner .rightBox .career .Tit_2:before{content: '';width: 1px;height: 170px;position: absolute;left: -100px;top:8%; background: #e9e0d8;transform: rotate(90deg);}
+section.about .inner .rightBox .career .txt_2 {font-size: 14px;line-height: 1.5;color: #292929;}
+section.about .inner .rightBox .career .txt_2 span {display: block;}
 section.about .inner .rightBox .skill {margin-top: 80px;position: relative;width: 50%;}
 section.about .inner .rightBox .skill:before {content: '';border-radius: 50%;width: 70px;height: 70px;background: #90b800;position:absolute;left: -45px;top: -15px;z-index: -9999;}
 section.about .inner .rightBox .skill .tit {font-size: 50px;margin-bottom: 0px;font-weight: normal;}
@@ -188,7 +192,7 @@ section.about .inner .rightBox .skill ul {overflow: hidden;display: flex;flex-di
 section.about .inner .rightBox .skill ul li {margin-top: 50px;font-size: 17px;}
 section.about .inner .rightBox .skill ul li .data {float: right;}
 section.about .inner .rightBox .skill ul li .data .count {font-family: 'Nanum Gothic', sans-serif;font-size: 20px;}
-section.about .inner .rightBox .skill ul li .data .count b {font-family: 'Nanum Gothic', sans-serif;font-size: 20px; padding-left: 10px;}
+section.about .inner .rightBox .skill ul li .data b {font-family: 'Nanum Gothic', sans-serif;font-size: 20px; padding-left: 10px;}
 
 /*section.secvisual*/
 .scvisual {position: relative; height: 1200px;overflow: hidden;padding-top: 300px}
@@ -249,61 +253,49 @@ section.contact .inner .txt {text-align: center;font-size: 25px;line-height: 2;c
 footer{width: 100%;height: 100px;background: #484848;}
 footer p {text-align: center; padding-top: 50px;color: #fff;font-size: 12px;font-family: 'Prata', serif;}
 
+/* 모바일 네비 추가 */
+header .open {display: none;}
+header .close {display: none;}
+
+/* 모바일용 줄바꿈 */
+br.mo {display: none;}
 
 /* 반응형 */
 /* pc-1720px~1401 */
 @media screen and (max-width:1720px) {
     .wrap {min-width: 100%;}
 
+    /* 공통 요소 */
+    .mainTit {padding-left: 50px;}
+
+     /* header */
+     .innerHeader .logo {position: absolute;left: 20px;top: 0;}  
+     header.on .innerHeader .logo {transition: all 0.4s;padding: 13px 25px;box-sizing: border-box;}
+     header.on .innerHeader .logo a img {width: 60%;transition: all 0.4s}
+     .menuOpen button.open {position: fixed;right: 2%;top:4%;z-index:300; }
+     .menuOpen .menuWrap .close {position: absolute;top:40px;right: 30px;}
+     .menuOpen .menuWrap .menu {width: 25%;height: 100vh;float: left;position: relative;z-index: -9999;}
+     .menuOpen .menuWrap .menu a {left:28%}
+     .menuOpen .menuWrap .menu a span:before {content: '';width: 0;height: 35px;background:#fff;position: absolute;bottom: -5px;z-index: -100;}
+     .menuOpen .menuWrap .menu a span:hover:before,.menuOpen .menuWrap .menu a span:focus:before {display: none;}
+     .menuOpen .menuWrap .menu a span:hover,.menuOpen .menuWrap .menu a span:focus{color: #fff;}
     
+     /* visual */
     .visual .txtBox {width: 350px;height: 250px;margin: auto;position: absolute; left:61%;top: 40%;line-height: 1.3;display: inline-block;word-spacing:1.5px;z-index: 100; box-sizing:border-box;color: #848484;}
-    section.about .lineBox {position: absolute; left: 12%; top: 45%;z-index:1; width: 500px;height: 600px;}
-    section.about .inner .leftBox .imgBox {z-index: -2; padding-left: 10px;}
+
+    /* about */
+    section.about .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 4%;top: 44px; }
+    section.about .lineBox {position: absolute; left: 4%; top: 45%;z-index:1; width: 510px;height: 600px;}
+    section.about .inner .leftBox .imgBox {z-index: -2; padding-left: 77px;}
     section.about .inner .leftBox .imgBox .img {width: 100%;opacity: 0.5;}
     section.about .inner .leftBox .txtBox {font-size: 15px;font-weight: normal; padding-top: 30px;padding-left: 130px;}
-    section.about .bar1 {position: absolute; right: 37%; bottom:29.5%; z-index: -1; width:170px;}
-    section.about .bar2 {position: absolute; right: 37%; bottom:21.7%; z-index: -1; width:170px;}
-    section.about .bar3 {position: absolute; right: 38%; bottom:14.5%; z-index: -1; width:150px;}
-    section.about .bar4 {position: absolute; right: 39.3%; bottom:7%; z-index: -1; width:130px;}
-    section.about .bar5 {position: absolute; right: 41.5%; bottom:-5px; z-index: -1; width:90px;}
-    section.Gallery .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 10%;top: 4%; }
+    section.about .bar1 {position: absolute; right: 23.5%; bottom:29.5%; z-index: -1; width:170px;}
+    section.about .bar2 {position: absolute; right: 23.5%; bottom:21.7%; z-index: -1; width:170px;}
+    section.about .bar3 {position: absolute; right: 25%; bottom:14.5%; z-index: -1; width:150px;}
+    section.about .bar4 {position: absolute; right: 26.5%; bottom:7%; z-index: -1; width:130px;}
+    section.about .bar5 {position: absolute; right: 29.5%; bottom:-5px; z-index: -1; width:90px;}
 }
 
-@media screen and (max-width:1400px) {
-    .wrap {min-width: 100%;}
-    .visual .txtBox {width: 350px;height: 250px;margin: auto;position: absolute; left:62%;top: 40%;line-height: 1.3;display: inline-block;word-spacing:1.5px;z-index: 100; box-sizing:border-box;color: #848484;}
-    section.about .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 5%;top: 50px; }
-    /* about_leftBox */
-    section.about .lineBox {position: absolute; left: 5%; top: 45%;z-index:1; width: 500px;height: 600px;}
-    section.about .inner .leftBox .imgBox {z-index: -2; padding-left: 70px;}
-    section.about .inner .leftBox .imgBox .img {width: 90%;opacity: 0.5;}
-    section.about .inner .leftBox .txtBox {font-size: 15px;font-weight: normal; padding-top: 30px;padding-left: 130px;}
-
-    /* about_rightBox */
-    section.about .inner .rightBox {padding-right: 60px;}
-    section.about .bar1 {position: absolute; right: 28.5%; bottom:29.5%; z-index: -1; width:170px;}
-    section.about .bar2 {position: absolute; right: 28.5%; bottom:21.7%; z-index: -1; width:170px;}
-    section.about .bar3 {position: absolute; right: 30%; bottom:14.5%; z-index: -1; width:150px;}
-    section.about .bar4 {position: absolute; right: 31.3%; bottom:7%; z-index: -1; width:130px;}
-    section.about .bar5 {position: absolute; right: 34.2%; bottom:-5px; z-index: -1; width:90px;}
-    section.Gallery .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 4%;top: 4%; }
-    /* leaf */
-    #leaf_a {position: absolute; left:-5px;bottom: 20%;}
-    #leaf_b {position: absolute; left:-30px;top: 55%;z-index: 1;}
-    #leaf_c {position: absolute; right:-150px;top: 25%;z-index: 1s;}
-    #leaf_d {display: block; position: absolute; left:-1%;top: 22%;;width: 100%;}
-    #wave_c {position: absolute; right: -50px;top: 7%;} 
-    #wave_c img {width: 80%;}
-    #circle_a {width: 50%;position: absolute; left: 20%; top: 38%;}
-    #sctitle {position: absolute; left:23%;top: 42%; }
-
-    /* mainTitle */
-    section.Gallery .inner .mainTit, section.about .inner .mainTit {padding-left: 60px;}
-
-    /* contact */
-    section.contact .inner .txt {text-align: center;font-size: 27px;line-height: 2;color: #fff;position: absolute; top: 30%;right: 35%}
-
-}
 
  /* 1024 테블릿 */
     /* 1400px~1001px */
@@ -314,38 +306,141 @@ footer p {text-align: center; padding-top: 50px;color: #fff;font-size: 12px;font
         .innerHeader .logo {position: absolute;left: 20px;top: 0;}  
         header.on .innerHeader .logo {transition: all 0.4s;padding: 13px 25px;box-sizing: border-box;}
         header.on .innerHeader .logo a img {width: 60%;transition: all 0.4s}
-        .menuOpen button.open {position: fixed;right: 2%;top:5.5%;z-index:300; }
+        .menuOpen button.open {position: fixed;right: 2%;top:4%;z-index:300; }
         .menuOpen .menuWrap .close {position: absolute;top:40px;right: 30px;}
         .menuOpen .menuWrap .menu {width: 25%;height: 100vh;float: left;position: relative;z-index: -9999;}
         .innerHeader .tnb {display: none;}
         .menuOpen .menuWrap .menu a {left:19%}
-        .menuOpen .menuWrap .menu:nth-child(2) a{left: 20%;}
-        .menuOpen .menuWrap .menu:nth-child(3) a{left: 22%;}
-        .menuOpen .menuWrap .menu:nth-child(5) a{left: 15%;}
+        .menuOpen .menuWrap .menu a span:before {content: '';width: 0;height: 35px;background:#fff;position: absolute;bottom: -5px;z-index: -100;}
+        .menuOpen .menuWrap .menu a span:hover:before,.menuOpen .menuWrap .menu a span:focus:before {display: none;}
+        .menuOpen .menuWrap .menu a span:hover,.menuOpen .menuWrap .menu a span:focus{color: #fff;}
 
         /*section.visual*/
         section.visual {margin-top: 100px;}
-        section.visual .txtBox {position: absolute;right: 21%; top: 26%;}
+        section.visual .txtBox {position: absolute;right: 14%; top: 28%;}
         section.visual .txtBox .tit {font-size: 36px;font-weight: bold;}
         section.visual .txtBox .txt {font-size: 13px;}
         section.visual .shapeBox{width: 40%;height: 40%;position: absolute;top: 19%; left: 60%;}
-        section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 340px;height: 307px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
-        section.visual .shapeBox  #Box2 {position: absolute; left: 0;top: 0;width: 340px;height: 307px;background: #fff;}
+        section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 340px;height: 329px;}
+        section.visual .shapeBox  #Box2 {position: absolute; left: 0;top: 0;width: 355px;height: 329px;}
         section.visual .scroll-downs {position: absolute;right: -71px;bottom: -5px;}
         section.visual .mousey {width: 3px;padding: 2px 9px;height: 28px;}
         section.visual .mousey .scroller {position: absolute;left: 30%;top: 15%;}
 
         /* about */
-        section.about .inner .moreBtn {display: inline-block;color: #848484; position: absolute; right: 32%;top: 44px; }
-        section.about .lineBox {position: absolute;left: 0;top: 45%;z-index: 1;width: 460px;height: 600px;}
-        /* leftBox */
-        section.about .inner .leftBox .imgBox {padding-left: 39px;}
-        section.about .inner .leftBox .imgBox .img {width: 88%;opacity: 0.5;}
-        section.about .inner .leftBox .txtBox {padding: 24px 66px;}
-        /* rightBox */
-        section.about .inner .rightBox {padding-right:169px;}
-        section.about .inner .rightBox .Tit:before {content: '';width: 1px;height: 133px;position: absolute;left: -84px;top: -58px;}
-        section.about .inner .rightBox .txt {font-size: 15px;line-height: 1.5;color: #292929;}
+        section.about .inner .moreBtn {position: absolute; right: 31%;top: 44px; }
+        section.about .lineBox {position: absolute;top: 40%;z-index: 1;width: 450px;height: 600px;}
+        /* about - leftBox */
+        section.about .inner .leftBox .imgBox {padding-left: 70px;}
+        section.about .inner .leftBox .imgBox .img {width: 75%;opacity: 0.5;}
+        section.about .inner .leftBox .txtBox {padding:33px 100px; box-sizing: border-box;}
 
-        section.about .inner .rightBox .Tit_2:before { content: ''; width: 1px; height: 133px; position: absolute; left: -84px; top: 9%; background: #e9e0d8; transform: rotate(90deg);}
+        /* about - rightBox */
+        section.about .inner .rightBox {padding-right: 272px;}
+        section.about .inner .rightBox .edu .Tit:before {content: '';width: 1px;height: 50px;position: absolute;left: -38px;top: -16px;}
+        section.about .inner .rightBox .career .Tit_2:before { content: ''; width: 1px; height: 50px; position: absolute; left: -38px; top: 15%; background: #e9e0d8; transform: rotate(90deg);}
+        section.about .bar1 {position: absolute;right: 19.5%; bottom: 29.5%; z-index: -1; width: 170px;}
+        section.about .bar2 {position: absolute;right: 19.5%; bottom: 21.7%; z-index: -1; width: 170px;}
+        section.about .bar3 {position: absolute; right: 21.5%; bottom:14.5%; z-index: -1; width:150px;}
+        section.about .bar4 {position: absolute; right: 23.5%; bottom:7%; z-index: -1; width:130px;}
+        section.about .bar5 {position: absolute; right: 27.5%; bottom:-5px; z-index: -1; width:90px;} 
+        
+        /* scvisual */
+        #wave_a {bottom: 32%;}
+        #wave_b {top: 16%;}
+        #wave_c { position: absolute; right: -29%; top: 10%;} 
+        #wave_c img {width: 57%;}
+        #cloud_a {display: block;margin-top: 197px;width: 100%;padding-left: 175px;}
+        #cloud_b {display: block;position: absolute; left: 9%;top: 41%;}
+        #circle_a {left: 5%;top: 29%;}
+        #circle_b {left:36%;top: 5%;}
+        #circle_b img {width: 15%;}
+        #circle_c {left: 2%;top:37%;}
+        #circle_d {left: 44%;top: 8%;}
+        #leaf_a {position: absolute;left: -7px;bottom: 23%;}
+        #leaf_a img {width: 55%;}
+        #leaf_b {position: absolute;left: -9%;top: 52%;}
+        #leaf_c {right: -13%;}
+        #leaf_d {display: none;}
+        #sctitle {left: 10%;top: 32%;}
+        #scvisual img {right: 11%; top: 30%;}
+
+        /* Gallery */
+        section.Gallery .inner .slide {margin-left: 28px;width: 72%;}
+        section.Gallery .inner .slide li .txt {font-size: 12px;}
+        section.Gallery .inner .slide li a span {padding-left: 114px;}
+        section.Gallery .inner .slide li a span:before {left: 154px;width: 50px;}
+        section.Gallery .inner .slide li a span:after {content: '';width: 50px;height: 1px;position: absolute;right: 237px;top: 10px;}
+        section.Gallery .inner .moreBtn {right: 2%;}
+
+        /* Contact */
+        section.contact .inner {height: 300px;}
+        section.contact .inner .mainTit {left: 0;}
+        section.contact .inner .txt {top: 33%; right: 32%;}
+
+        /* goTop */
+        .goTop img {width: 45px;height: 21px;}
     }
+        
+    /*1000px~768px*/
+    @media screen and (max-width:1000px){
+         /* header */
+         .innerHeader .tnb {display: none;}
+         .menuOpen .menuWrap .close {position: absolute;top:32px;right: 30px;}
+         .menuOpen .menuWrap .menu {width: 25%;height: 100vh;float: left;position: relative;z-index: -9999;}
+         .menuOpen .menuWrap .menu a span {font-size: 40px;}
+         .menuOpen .menuWrap .menu a {left:16%}
+         .menuOpen .menuWrap .menu:nth-child(2) a {left: 17%;}
+         .menuOpen .menuWrap .menu:nth-child(3) a {left: 20%;}
+         .menuOpen .menuWrap .menu:nth-child(4) a {left: 20%;}
+         .menuOpen .menuWrap .menu a span:before {content: '';width: 0;height: 35px;background:#fff;position: absolute;bottom: -5px;z-index: -100;}
+         .menuOpen .menuWrap .menu a span:hover:before,.menuOpen .menuWrap .menu a span:focus:before {display: none;}
+         .menuOpen .menuWrap .menu a span:hover,.menuOpen .menuWrap .menu a span:focus{color: #fff;}
+        
+ 
+         /* visual */
+        section.visual .txtBox {top: 17%;left: 58%;}
+        section.visual .txtBox .txt {font-size: 11px;}
+        section.visual .shapeBox{position: absolute;top: 9%; left: 56%;}
+        section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 283px;height: 285px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
+        section.visual .shapeBox #Box2 {width: 283px;height: 285px;}
+
+
+        /* about */
+        section.about .inner {height: 1257px;}
+        section.about .inner .moreBtn {position: absolute; right: 48%;top: 44px; }
+        section.about .inner .leftBox {width: 60%;}
+        section.about .inner .leftBox .txtBox {position: absolute;top: -207px; left: 24%; text-align: center;}
+        section.about .inner .leftBox .imgBox {position: absolute;top: -23px; left: 18%;}
+        section.about .inner .leftBox .imgBox .img {width: 63%;}
+        section.about .lineBox {position: absolute;top: 35%;left: 24%;width:372px;}
+        section.about .inner .rightBox {position: absolute;top: 51%;left: 2.5%;}
+        section.about .inner .rightBox .skill:before {width: 50px;height: 50px;left: -24px;top: -7px;}
+        section.about .inner .rightBox .edu {position: absolute; top: 5%;left: 0;}
+        section.about .inner .rightBox .edu .Tit:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px; top: -30px;}
+        section.about .inner .rightBox .career {padding-top: 150px;}
+        section.about .inner .rightBox .career .Tit_2:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px;top: 30%;background: #e9e0d8;transform: rotate(90deg);}
+        section.about .inner .rightBox .skill ul {display: inline-flex;flex-direction:row; flex-wrap: nowrap;justify-content: space-between;}
+        section.about .inner .rightBox .skill ul li {padding-left: 93px;}
+        section.about .inner .rightBox .skill ul li:first-child {padding-left: 0;}
+        section.about .inner .rightBox .skill ul li .data .count {font-size: 15px;position: absolute;bottom: -28px;padding-left: 20px;}
+        section.about .inner .rightBox .skill ul li .data .count:nth-child(5) {color: red;}
+        section.about .inner .rightBox .skill ul li .data .count:after {content:'%';position: absolute;top: 0%;right: -15px;font-weight: bold;}
+        section.about .inner .rightBox .skill ul li .data b {display: none;}
+        section.about .bar1 {position: absolute;left: 5%;bottom: 5%;width: 85px;}
+        section.about .bar2 {position: absolute;left: 28%;bottom: 5%;width: 80px;}
+        section.about .bar3 {position: absolute;left: 50%;bottom: 5%;width: 10vw;height: 3vh;}
+
+
+
+        /* Gallery */
+        section.Gallery .inner {width: 100%;}
+        section.Gallery .inner .slide  {width: 100%;display: flex;justify-content: space-around;flex-direction: column;padding-top: 60px;justify-content: center;align-items: center;}
+        section.Gallery .inner .slide li {float: left;margin-top: 60px;}
+        section.Gallery .inner .slide li .txt br {display:none !important;}
+        section.Gallery .inner .slide li a img {width: 100%;}  
+        section.Gallery .inner .slide li a span {margin: auto;} 
+        section.Gallery .inner .slide li a span:before {left: 154px;width: 40px;} 
+        section.Gallery .inner .slide li a span:after {right: 151px;width: 40px;}     
+        section.Gallery .inner .moreBtn {right: 2%;top: 1%;}
+        }
