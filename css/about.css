@@ -181,23 +181,23 @@ section.bottom .inner .rightBox .skill ul li{float: left;flex-basis: 170px;paddi
 section.bottom .inner .rightBox .skill ul li .data {padding-top: 110px;}
 section.bottom .inner .rightBox .skill ul li .data img {width: 30%;margin: 30px 20px;}
 section.bottom .inner .rightBox .skill ul li .data img img {width: 100%;}
-section.bottom .inner .rightBox .skill ul li span {font-family: 'Nanum Gothic', sans-serif;font-size: 20px;font-weight:400;}
+section.bottom .inner .rightBox .skill ul li .count2 {font-family: 'Nanum Gothic', sans-serif;font-size: 20px;font-weight:400;}
 section.bottom .inner .rightBox .skill ul li b{font-family: 'Nanum Gothic', sans-serif;font-size: 20px;font-weight: 400; }
-section.bottom .inner .rightBox .skill ul li:nth-child(1) span {position: absolute;top: 42px;left: 35px;} 
+section.bottom .inner .rightBox .skill ul li:nth-child(1) .count2 {position: absolute;top: 42px;left: 35px;} 
 section.bottom .inner .rightBox .skill ul li:nth-child(1) b {position: absolute; top: 42px;left: 58px;}
 
-section.bottom .inner .rightBox .skill ul li:nth-child(2) span {position: absolute;top: 42px;left: 42%;} 
+section.bottom .inner .rightBox .skill ul li:nth-child(2) .count2 {position: absolute;top: 42px;left: 42%;} 
 section.bottom .inner .rightBox .skill ul li:nth-child(2) b {position: absolute; top: 42px;left: 45.5%;}
 
-section.bottom .inner .rightBox .skill ul li:nth-child(3) span {position: absolute;top: 42px;right: 115px;} 
+section.bottom .inner .rightBox .skill ul li:nth-child(3) .count2 {position: absolute;top: 42px;right: 115px;} 
 section.bottom .inner .rightBox .skill ul li:nth-child(3) b {position: absolute; top: 42px;right: 97px;}
 
 section.bottom .inner .rightBox .skill ul li:nth-child(4) {margin-left: 90px;}
-section.bottom .inner .rightBox .skill ul li:nth-child(4) span {position: absolute;bottom: 175px;left:120px;} 
+section.bottom .inner .rightBox .skill ul li:nth-child(4) .count2 {position: absolute;bottom: 175px;left:120px;} 
 section.bottom .inner .rightBox .skill ul li:nth-child(4) b {position: absolute; bottom: 175px;left: 145px;}
 
 section.bottom .inner .rightBox .skill ul li:nth-child(5) {margin-right: 90px;}
-section.bottom .inner .rightBox .skill ul li:nth-child(5) span {position: absolute;bottom: 175px;right: 210px;} 
+section.bottom .inner .rightBox .skill ul li:nth-child(5) .count2 {position: absolute;bottom: 175px;right: 210px;} 
 section.bottom .inner .rightBox .skill ul li:nth-child(5) b {position: absolute; bottom: 175px;right: 190px;}
 /*section.secondvs*/
 section.secondvs {width: 100%;margin: auto;margin-top: 250px;position: relative;overflow: hidden;}

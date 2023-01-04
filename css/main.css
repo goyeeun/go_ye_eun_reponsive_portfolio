@@ -128,7 +128,7 @@ section.about .lineBox {position: absolute; left: 240px; top: 45%;z-index:1; wid
 /*bar-svgAni*/
 .bar1 {display: block; transform: rotate(0deg);}
 .bar1 .svgAni line {fill:none;stroke:#B8D9E2;stroke-width:29;stroke-miterlimit:10; stroke-dasharray:870; stroke-dashoffset:0;}
-section.about .bar1 {position: absolute; right: 31.2%; bottom:29.5%; z-index: -1; width:170px;}
+section.about .bar1 {position: absolute; left: 50%; bottom:29.5%; z-index: -1; width:170px;}
 .bar1.motion .svgAni line {animation-name: line1; animation-duration: 9s;}
 @keyframes line1 {
     0%{stroke-dashoffset:870;}
@@ -136,7 +136,7 @@ section.about .bar1 {position: absolute; right: 31.2%; bottom:29.5%; z-index: -1
 }
 .bar2 {display: block; transform: rotate(0deg);}
 .bar2 .svgAni line {fill:none;stroke:#7A9096;stroke-width:29;stroke-miterlimit:10; stroke-dasharray:870; stroke-dashoffset:0;}
-section.about .bar2 {position: absolute; right: 31.2%; bottom:22%; z-index: -1; width:170px;}
+section.about .bar2 {position: absolute; left: 50%; bottom:22%; z-index: -1; width:170px;}
 .bar2.motion .svgAni line {animation-name: line2; animation-duration: 9s;}
 @keyframes line2 {
     0%{stroke-dashoffset:870;}
@@ -144,7 +144,7 @@ section.about .bar2 {position: absolute; right: 31.2%; bottom:22%; z-index: -1; 
 }
 .bar3 {display: block; transform: rotate(0deg);}
 .bar3 .svgAni line {fill:none;stroke:#E3D0B8;stroke-width:29;stroke-miterlimit:10; stroke-dasharray:870; stroke-dashoffset:0;}
-section.about .bar3 {position: absolute; right: 32.2%; bottom:14.5%; z-index: -1; width:150px;}
+section.about .bar3 {position: absolute; left: 50%; bottom:14.5%; z-index: -1; width:150px;}
 .bar3.motion .svgAni line {animation-name: line3; animation-duration: 9s;}
 @keyframes line3 {
     0%{stroke-dashoffset:870;}
@@ -152,7 +152,7 @@ section.about .bar3 {position: absolute; right: 32.2%; bottom:14.5%; z-index: -1
 }
 .bar4 {display: block; transform: rotate(0deg);}
 .bar4 .svgAni line {fill:none;stroke:#96857A;stroke-width:29;stroke-miterlimit:10; stroke-dasharray:870; stroke-dashoffset:0;}
-section.about .bar4 {position: absolute; right: 33.2%; bottom:7%; z-index: -1; width:130px;}
+section.about .bar4 {position: absolute; left: 50%; bottom:7%; z-index: -1; width:130px;}
 .bar4.motion .svgAni line {animation-name: line4; animation-duration: 9s;}
 @keyframes line4 {
     0%{stroke-dashoffset:870;}
@@ -160,7 +160,7 @@ section.about .bar4 {position: absolute; right: 33.2%; bottom:7%; z-index: -1; w
 }
 .bar5 {display: block; transform: rotate(0deg);}
 .bar5 .svgAni line {fill:none;stroke:#e3e3e3;stroke-width:45;stroke-miterlimit:10; stroke-dasharray:870; stroke-dashoffset:0;}
-section.about .bar5 {position: absolute; right: 35.3%; bottom:-5px; z-index: -1; width:90px;}
+section.about .bar5 {position: absolute; left: 50%; bottom:-5px; z-index: -1; width:90px;}
 .bar5.motion .svgAni line {animation-name: line5; animation-duration: 9s;}
 @keyframes line5 {
     0%{stroke-dashoffset:870;}
@@ -168,18 +168,18 @@ section.about .bar5 {position: absolute; right: 35.3%; bottom:-5px; z-index: -1;
 }
 
 /*leftBox*/
-section.about .inner .leftBox {float: left;position: relative;margin-top: 200px;}
+section.about .inner .leftBox {float: left;position: relative;margin-top: 200px;width: 50%;}
 section.about .inner .leftBox .imgBox {z-index: -2;}
-section.about .inner .leftBox .imgBox .img {width: 90%;}
-section.about .inner .leftBox .imgBox .img img {width: 100%;}
-section.about .inner .leftBox .txtBox {font-size: 15px;font-weight: normal; padding-top: 20px;padding-left: 55px;}
+section.about .inner .leftBox .imgBox .img {width: 100%;}
+section.about .inner .leftBox .imgBox .img img {width:70%;}
+section.about .inner .leftBox .txtBox {font-size: 15px;font-weight: normal; padding-top: 20px;padding-left: 0;}
 /*rightBox*/
-section.about .inner .rightBox {float: right;margin-top: 60px;position: relative;}
+section.about .inner .rightBox {float: right;margin-top: 60px;position: relative;width: 50%;}
 section.about .inner .rightBox .edu {width: 100%;height: 100%;}
 section.about .inner .rightBox .edu .Tit {font-size: 20px;font-weight: 600;color: #292929;font-weight: normal;font-family: 'Nanum Gothic', sans-serif;margin-bottom: 20px;}
 section.about .inner .rightBox .edu .Tit:before{content: '';width: 1px;height: 170px;position: absolute;left: -100px;top:-75px; background: #e9e0d8;transform: rotate(90deg);}
 section.about .inner .rightBox .edu .txt {font-size: 14px;line-height: 1.7;color: #292929;}
-section.about .inner .rightBox .edu .txt span {display: block;}
+section.about .inner .rightBox .edu .lineBr {display: inline-block ;}
 section.about .inner .rightBox .career {width: 100%;height: 100%;}
 section.about .inner .rightBox .career .Tit_2 {font-size: 20px;font-weight: 600;margin-bottom: 20px;color: #292929;font-weight: normal;font-family: 'Nanum Gothic', sans-serif;padding-top: 20px;}
 section.about .inner .rightBox .career .Tit_2:before{content: '';width: 1px;height: 170px;position: absolute;left: -100px;top:8%; background: #e9e0d8;transform: rotate(90deg);}
@@ -190,9 +190,9 @@ section.about .inner .rightBox .skill:before {content: '';border-radius: 50%;wid
 section.about .inner .rightBox .skill .tit {font-size: 50px;margin-bottom: 0px;font-weight: normal;}
 section.about .inner .rightBox .skill ul {overflow: hidden;display: flex;flex-direction: column;}
 section.about .inner .rightBox .skill ul li {margin-top: 50px;font-size: 17px;}
-section.about .inner .rightBox .skill ul li .data {float: right;}
-section.about .inner .rightBox .skill ul li .data .count {font-family: 'Nanum Gothic', sans-serif;font-size: 20px;}
-section.about .inner .rightBox .skill ul li .data b {font-family: 'Nanum Gothic', sans-serif;font-size: 20px; padding-left: 10px;}
+section.about .inner .rightBox .skill ul li #data {float: right;margin-right: 90px;}
+section.about .inner .rightBox .skill ul li #data .count {font-family: 'Nanum Gothic', sans-serif;font-size: 20px;}
+section.about .inner .rightBox .skill ul li #data b {font-family: 'Nanum Gothic', sans-serif;font-size: 20px; padding-left: 10px;}
 
 /*section.secvisual*/
 .scvisual {position: relative; height: 1200px;overflow: hidden;padding-top: 300px}
@@ -329,21 +329,22 @@ br.mo {display: none;}
 
         /* about */
         section.about .inner .moreBtn {position: absolute; right: 31%;top: 44px; }
-        section.about .lineBox {position: absolute;top: 40%;z-index: 1;width: 450px;height: 600px;}
+        section.about .lineBox {top: 40%;z-index: 1;width: 400px;height: 600px;}
         /* about - leftBox */
-        section.about .inner .leftBox .imgBox {padding-left: 70px;}
-        section.about .inner .leftBox .imgBox .img {width: 75%;opacity: 0.5;}
+        section.about .inner .leftBox .imgBox {padding-left: 50px;}
+        section.about .inner .leftBox .imgBox .img {width: 70%;opacity: 0.5;}
         section.about .inner .leftBox .txtBox {padding:33px 100px; box-sizing: border-box;}
 
         /* about - rightBox */
-        section.about .inner .rightBox {padding-right: 272px;}
+        section.about .inner .rightBox{right: 10%;}
         section.about .inner .rightBox .edu .Tit:before {content: '';width: 1px;height: 50px;position: absolute;left: -38px;top: -16px;}
-        section.about .inner .rightBox .career .Tit_2:before { content: ''; width: 1px; height: 50px; position: absolute; left: -38px; top: 15%; background: #e9e0d8; transform: rotate(90deg);}
-        section.about .bar1 {position: absolute;right: 19.5%; bottom: 29.5%; z-index: -1; width: 170px;}
-        section.about .bar2 {position: absolute;right: 19.5%; bottom: 21.7%; z-index: -1; width: 170px;}
-        section.about .bar3 {position: absolute; right: 21.5%; bottom:14.5%; z-index: -1; width:150px;}
-        section.about .bar4 {position: absolute; right: 23.5%; bottom:7%; z-index: -1; width:130px;}
-        section.about .bar5 {position: absolute; right: 27.5%; bottom:-5px; z-index: -1; width:90px;} 
+        section.about .inner .rightBox .edu .lineBr {display: block;}
+        section.about .inner .rightBox .career .Tit_2:before { content: ''; width: 1px; height: 50px; position: absolute; left: -38px; top: 18%; background: #e9e0d8; transform: rotate(90deg);}
+        section.about .bar1 {position: absolute;left: 57%; bottom: 28.5%; z-index: -1; width: 170px;}
+        section.about .bar2 {position: absolute;left: 57%; bottom: 21%; z-index: -1; width: 170px;}
+        section.about .bar3 {position: absolute;left: 57%; bottom:14%; z-index: -1; width:150px;}
+        section.about .bar4 {position: absolute;left: 57%; bottom:7%; z-index: -1; width:130px;}
+        section.about .bar5 {position: absolute;left: 57%; bottom:-5px; z-index: -1; width:90px;} 
         
         /* scvisual */
         #wave_a {bottom: 32%;}
@@ -410,26 +411,42 @@ br.mo {display: none;}
         section.about .inner {height: 1257px;}
         section.about .inner .moreBtn {position: absolute; right: 48%;top: 44px; }
         section.about .inner .leftBox {width: 60%;}
-        section.about .inner .leftBox .txtBox {position: absolute;top: -207px; left: 24%; text-align: center;}
-        section.about .inner .leftBox .imgBox {position: absolute;top: -23px; left: 18%;}
+        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: 24%; text-align: center;}
+        section.about .inner .leftBox .imgBox {position: absolute;bottom: -76px; left: 27%;width: 294px;}
         section.about .inner .leftBox .imgBox .img {width: 63%;}
-        section.about .lineBox {position: absolute;top: 35%;left: 24%;width:372px;}
-        section.about .inner .rightBox {position: absolute;top: 51%;left: 2.5%;}
+        section.about .lineBox {position: absolute;top: 30%;left: 38%;width:200px;}
+        section.about .inner .rightBox {position: absolute;top: 28%;left: 3%;}
+        section.about .inner .rightBox .skill ul li {margin-top: 40px;}
         section.about .inner .rightBox .skill:before {width: 50px;height: 50px;left: -24px;top: -7px;}
         section.about .inner .rightBox .edu {position: absolute; top: 5%;left: 0;}
         section.about .inner .rightBox .edu .Tit:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px; top: -30px;}
-        section.about .inner .rightBox .career {padding-top: 150px;}
-        section.about .inner .rightBox .career .Tit_2:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px;top: 30%;background: #e9e0d8;transform: rotate(90deg);}
-        section.about .inner .rightBox .skill ul {display: inline-flex;flex-direction:row; flex-wrap: nowrap;justify-content: space-between;}
-        section.about .inner .rightBox .skill ul li {padding-left: 93px;}
+        section.about .inner .rightBox .career {margin-top: 185px;}
+        section.about .inner .rightBox .career .Tit_2:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px;top: 21%;background: #e9e0d8;transform: rotate(90deg);}
         section.about .inner .rightBox .skill ul li:first-child {padding-left: 0;}
-        section.about .inner .rightBox .skill ul li .data .count {font-size: 15px;position: absolute;bottom: -28px;padding-left: 20px;}
-        section.about .inner .rightBox .skill ul li .data .count:nth-child(5) {color: red;}
-        section.about .inner .rightBox .skill ul li .data .count:after {content:'%';position: absolute;top: 0%;right: -15px;font-weight: bold;}
-        section.about .inner .rightBox .skill ul li .data b {display: none;}
-        section.about .bar1 {position: absolute;left: 5%;bottom: 5%;width: 85px;}
-        section.about .bar2 {position: absolute;left: 28%;bottom: 5%;width: 80px;}
-        section.about .bar3 {position: absolute;left: 50%;bottom: 5%;width: 10vw;height: 3vh;}
+        section.about .inner .rightBox .skill ul li #data .count {font-size: 18px;padding-left: 10px;}
+        section.about .inner .rightBox .skill ul li #data .count:after {content:'%';}
+        section.about .inner .rightBox .skill ul li #data b {display: none;}
+        section.about .bar1 {position: absolute;left: 6%;bottom: 22%;}
+        section.about .bar2 {position: absolute;left: 6%;bottom: 16.5%;}
+        section.about .bar3 {position: absolute;left: 6%;bottom: 11%;}
+        section.about .bar4 {position: absolute;left: 6%;bottom: 5.5%;}
+        section.about .bar5 {position: absolute;left: 6%; bottom: -7px;}
+
+
+        /* scvisual */
+        #sctitle {left: 10%;top: 32%;font-size: 45px;}
+        #cloud_a {margin-top: 127px;}
+        #cloud_b {left: 9%; top: 37%;}
+        #leaf_a {left: -7px;}
+        #leaf_c {right: -16%;top:21%}
+        #circle_b img {width: 13%;}
+        #circle_c {top:30%}
+        #circle_d {top: 6%;}
+        #circle_d img {width: 6%;}
+        #wave_a  {display: none;}
+        #wave_b  {display: none;}
+        #wave_c {left: 47%;}
+        #circle_a {left: 3%;top: 29%;}
 
 
 
@@ -443,4 +460,63 @@ br.mo {display: none;}
         section.Gallery .inner .slide li a span:before {left: 154px;width: 40px;} 
         section.Gallery .inner .slide li a span:after {right: 151px;width: 40px;}     
         section.Gallery .inner .moreBtn {right: 2%;top: 1%;}
+
+        /* contact */
+        section.contact .inner .txt {right: 27%;}
+        }
+
+        /*767px~321px*/
+        @media screen and (max-width:767px) {
+            body {font-size: 13px;}
+        
+        /* header */
+         .innerHeader .tnb {display: none;}
+         .menuOpen .menuWrap {display: flex; flex-direction: row;}
+         .menuOpen .menuWrap .close {position: absolute;top:32px;right: 30px;}
+         .menuOpen .menuWrap .menu {width: 25%;height: 100vh;float: left;position: relative;z-index: -9999;}
+         .menuOpen .menuWrap .menu a span {font-size: 40px;}
+         .menuOpen .menuWrap .menu a {left:16%}
+         .menuOpen .menuWrap .menu:nth-child(2) a {left: 17%;}
+         .menuOpen .menuWrap .menu:nth-child(3) a {left: 20%;}
+         .menuOpen .menuWrap .menu:nth-child(4) a {left: 20%;}
+         .menuOpen .menuWrap .menu a span:before {content: '';width: 0;height: 35px;background:#fff;position: absolute;bottom: -5px;z-index: -100;}
+         .menuOpen .menuWrap .menu a span:hover:before,.menuOpen .menuWrap .menu a span:focus:before {display: none;}
+         .menuOpen .menuWrap .menu a span:hover,.menuOpen .menuWrap .menu a span:focus{color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* about */
+        section.about .inner .moreBtn {position: absolute; right: 48%;top: 44px; }
+        section.about .inner .leftBox {width: 60%;}
+        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: 24%; text-align: center;}
+        section.about .inner .leftBox .imgBox {position: absolute;bottom: -76px; left: 27%;width: 294px;}
+        section.about .inner .leftBox .imgBox .img {width: 63%;}
+        section.about .lineBox {position: absolute;top: 30%;left: 38%;width:200px;}
+        section.about .inner .rightBox {position: absolute;top: 28%;left: 2%;}
+        section.about .inner .rightBox .skill:before {width: 50px;height: 50px;left: -24px;top: -7px;}
+        section.about .inner .rightBox .edu {position: absolute; top: 5%;left: 0;}
+        section.about .inner .rightBox .edu .Tit:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px; top: -30px;}
+        section.about .inner .rightBox .career {padding-top: 150px;}
+        section.about .inner .rightBox .career .Tit_2:before {content: ''; width: 1px;height: 55px;position: absolute;left: 28px;top: 17%;background: #e9e0d8;transform: rotate(90deg);}
+        section.about .inner .rightBox .skill ul li:first-child {padding-left: 0;}
+        section.about .inner .rightBox .skill ul li #data .count {font-size: 15px;padding-left: 20px;}
+        section.about .inner .rightBox .skill ul li #data .count:after {content:'%';}
+        section.about .inner .rightBox .skill ul li #data b {display: none;}
+        section.about .bar1 {position: absolute;left: 6%;bottom: 24%;width: 137px;}
+        section.about .bar2 {position: absolute;left: 6%;bottom: 18%;width: 137px;}
+        section.about .bar3 {position: absolute;left: 6%;bottom: 11.5%;width: 115px;}
+        section.about .bar4 {position: absolute;left: 6%;bottom: 5.5%;width: 100px;}
+        section.about .bar5 {position: absolute;left: 6%; bottom: -7px;width: 70px;}
+
         }
