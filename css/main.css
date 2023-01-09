@@ -463,10 +463,8 @@ br.mo {display: none;}
         section.contact .inner .txt {right: 27%;}
         }
 
-        /*767px~321px*/
+        /*767px~480px*/
         @media screen and (max-width:767px) {
-            .wrap {min-width: 100%;}
-            body {font-size: 13px;}
             .mainTit {margin-left: -40px;}
             
         /* menuWrap */
@@ -494,12 +492,12 @@ br.mo {display: none;}
          /* visual */
          section.visual {margin-top: 90px; padding-bottom: 250px;}
          section.visual .img {width: 100%;}
-         section.visual .txtBox {top: 43%;left: -7%;text-align: center;}
+         section.visual .txtBox {top: 43%;left: 13%;text-align: center;}
          section.visual .txtBox .tit {font-size: 28px;text-align: center;}
          section.visual .txtBox .txt {font-size: 10px;}
-         section.visual .shapeBox{position: absolute;top: 37%; left: 9%;}
-         section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 252px;height: 238px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
-         section.visual .shapeBox #Box2 {width: 251px;height: 237px;}
+         section.visual .shapeBox{position: absolute;top: 37%; left: 21%;}
+         section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 265px;height: 257px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
+         section.visual .shapeBox #Box2 {width: 270px;height: 255px;}
          section.visual .scroll-downs {position: absolute;right: 0px;bottom: -8px;}
          section.visual .mousey {width: 0;padding: 2px 9px;height: 24px;}
          section.visual .mousey .scroller {left: 26%;top: 11%;}
@@ -507,10 +505,10 @@ br.mo {display: none;}
         /* about */
         section.about .inner .moreBtn {position: absolute; left: 1%;top: 7%; }
         section.about .inner .leftBox {width: 60%;}
-        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: -26px; text-align: center;}
+        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: 50px; text-align: center;}
         section.about .inner .leftBox .imgBox {display: none;}
         section.about .inner .leftBox .imgBox .img {width: 63%;}
-        section.about .lineBox {position: absolute;top: 30%;left: 16%;width:200px;}
+        section.about .lineBox {position: absolute;top: 29%;left: 26%;width:200px;}
         section.about .inner .rightBox {position: absolute;top: 28%;left: 2%;}
         section.about .inner .rightBox .skill:before {width: 50px;height: 50px;left: -24px;top: -7px;}
         section.about .inner .rightBox .edu {position: absolute; top: 5%;left: 0;}
@@ -531,14 +529,14 @@ br.mo {display: none;}
         section.about .bar5 {position: absolute;left: 8%; bottom: 5px;}
 
         /* scvisual */
-        #sctitle {left: 10%;top: 28%;font-size: 21px;}
+        #sctitle {left: 10%;top: 28%;font-size: 28px;}
         #cloud_a {position: absolute;right: -18%;}
         #cloud_a img {width: 55%;}
         #cloud_b {left: 9%; top: 35%;}
         #leaf_a {top:44%;}
         #leaf_a img {width: 25%;}
         #leaf_b {display: none;}
-        #leaf_c {right: -69%;top:8%;}
+        #leaf_c {right: -46%;top:8%;}
         #leaf_c img {width:45%;}
         #circle_a {left: 3%;top: 26%;}
         #circle_a img {width: 25%;}
@@ -552,17 +550,54 @@ br.mo {display: none;}
         #scvisual img {width: 35%;position: absolute; right: 11%;top: 27%;}
 
         /* Gallery */
-        section.Gallery .inner .moreBtn {position: absolute; left: 4%;top: 2.1%;}
+        section.Gallery .inner .moreBtn {position: absolute; left: 4%;top: 82px;}
         section.Gallery .inner .slide {margin: auto;}
         section.Gallery .inner .slide li {width: 90%;}
-        section.Gallery .inner .slide li a span { padding-left: 122px;}
-        section.Gallery .inner .slide li a span:before {left: 0;width: 90px;} 
-        section.Gallery .inner .slide li a span:after {right: 0;width: 90px;}  
+        section.Gallery .inner .slide li a span {font-size: 17px;text-align: center;padding-right:100px ;}
+        section.Gallery .inner .slide li:nth-child(4) a span {margin-top: -20px;}
+        section.Gallery .inner .slide li a span:before {left: 0;width: 135px;} 
+        section.Gallery .inner .slide li a span:after {right: 0;width: 135px;}  
         section.Gallery .inner .slide li .tit {font-size: 25px;}
         
         /* contact */
-        section.contact .inner .txt {text-align: center;font-size: 18px;line-height: 2;color: #fff;margin: auto -38px;}
+        section.contact .inner .txt {text-align: center;font-size: 22px;line-height: 2;color: #fff;margin: auto -38px;}
 
         /* goTop */
         .goTop {right: 10px;bottom: 15%;z-index: 1;}
         }
+
+        /* 320px~480px */
+        @media screen and (max-width:480px) {
+        
+        
+         /* visual */
+         section.visual {margin-top: 90px; padding-bottom: 250px;}
+         section.visual .img {width: 100%;}
+         section.visual .txtBox {top: 44%;left: -9%;text-align: center;}
+         section.visual .txtBox .tit {font-size: 28px;text-align: center;}
+         section.visual .txtBox .txt {font-size: 10px;}
+         section.visual .shapeBox{position: absolute;top: 37%; left: 4%;}
+         section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 265px;height: 240px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
+         section.visual .shapeBox #Box2 {width: 270px;height: 238px;}
+         section.visual .scroll-downs {position: absolute;right: 0px;bottom: -8px;}
+         section.visual .mousey {width: 0;padding: 4px 8px;height: 19px;}
+         section.visual .mousey .scroller {left: 23%;top: 11%;}
+
+          /* about */
+        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: -37px; text-align: center;}
+        section.about .inner .leftBox .imgBox {display: none;}
+        section.about .lineBox {position: absolute;top: 29%;left: 14%;width:200}
+
+        /* sctitle */
+        #sctitle {font-size: 20px;}
+        #leaf_c {right: -71%;}
+
+        /* Gallery */
+        section.Gallery .inner .slide li a span {font-size: 13px;}
+        section.Gallery .inner .slide li a span:before {width: 100px;}
+        section.Gallery .inner .slide li a span:after {width: 100px;}
+        section.Gallery .inner .slide li:nth-child(4) a span {margin-top: -10px;}
+
+        /* contact */
+        section.contact .inner .txt {font-size: 17px;}
+         }
