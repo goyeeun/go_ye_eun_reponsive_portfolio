@@ -463,7 +463,7 @@ br.mo {display: none;}
         section.contact .inner .txt {right: 27%;}
         }
 
-        /*767px~480px*/
+        /*767px~480px mo_가로*/
         @media screen and (max-width:767px) {
             .mainTit {margin-left: -40px;}
             
@@ -566,17 +566,17 @@ br.mo {display: none;}
         .goTop {right: 10px;bottom: 15%;z-index: 1;}
         }
 
-        /* 320px~480px */
-        @media screen and (max-width:480px) {
+        /* 375px~470px-mo_세로 */
+        @media screen and (max-width:479px) {
         
         
          /* visual */
          section.visual {margin-top: 90px; padding-bottom: 250px;}
          section.visual .img {width: 100%;}
-         section.visual .txtBox {top: 44%;left: -9%;text-align: center;}
+         section.visual .txtBox {top: 44%;left: 0;text-align: center;}
          section.visual .txtBox .tit {font-size: 28px;text-align: center;}
          section.visual .txtBox .txt {font-size: 10px;}
-         section.visual .shapeBox{position: absolute;top: 37%; left: 4%;}
+         section.visual .shapeBox{position: absolute;top: 37%; left: 10%;}
          section.visual .shapeBox  #Box1 {position: absolute; left: 8%;top: 0; width: 265px;height: 240px;background: #90b800;box-shadow: 3px 3px 8px #848484;}
          section.visual .shapeBox #Box2 {width: 270px;height: 238px;}
          section.visual .scroll-downs {position: absolute;right: 0px;bottom: -8px;}
@@ -584,13 +584,13 @@ br.mo {display: none;}
          section.visual .mousey .scroller {left: 23%;top: 11%;}
 
           /* about */
-        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: -37px; text-align: center;}
+        section.about .inner .leftBox .txtBox {position: absolute;bottom: 135px; left: -12px; text-align: center;}
         section.about .inner .leftBox .imgBox {display: none;}
-        section.about .lineBox {position: absolute;top: 29%;left: 14%;width:200}
+        section.about .lineBox {position: absolute;top: 29%;left: 18%;width:200}
 
         /* sctitle */
         #sctitle {font-size: 20px;}
-        #leaf_c {right: -71%;}
+        #leaf_c {right: -58%;}
 
         /* Gallery */
         section.Gallery .inner .slide li a span {font-size: 13px;}
@@ -599,5 +599,5 @@ br.mo {display: none;}
         section.Gallery .inner .slide li:nth-child(4) a span {margin-top: -10px;}
 
         /* contact */
-        section.contact .inner .txt {font-size: 17px;}
+        section.contact .inner .txt {font-size: 19px;}
          }
