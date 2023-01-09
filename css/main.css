@@ -573,7 +573,7 @@ br.mo {display: none;}
          /* visual */
          section.visual {margin-top: 90px; padding-bottom: 250px;}
          section.visual .img {width: 100%;}
-         section.visual .txtBox {top: 44%;left: 4px;text-align: center;}
+         section.visual .txtBox {top: 44%;left: 9px;text-align: center;}
          section.visual .txtBox .tit {font-size: 28px;text-align: center;}
          section.visual .txtBox .txt {font-size: 10px;}
          section.visual .shapeBox{position: absolute;top: 37%; left: 13%;}
